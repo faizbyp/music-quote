@@ -1,33 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
 function App() {
-  const [count, setCount] = useState(0)
+  const handleRand = () => {
+    alert("Randomize not working yet");
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className='container-fluid bg-success position-relative' style={{height: "100svh"}}>
+      <small className="position-absolute top-0 end-0 px-4 py-3 text-white-50">Music Quote</small>
+        <div className="row h-100 justify-content-center align-items-center">
+          <figure id='quote-box' className="col-11 col-md-8 col-lg-6 col-xxl-4 bg-white px-4 py-3 rounded-4 shadow">
+            <h1 id="text">Teruslah mekar tanpa menjadi layu.</h1>
+            <p id='author' className="text-body-secondary">— Langit Biru Cinta Searah</p>
+            <section id="buttons" className='text-end mb-2'>
+              <a id='tweet-quote' href="https://twitter.com/intent/tweet" target='_blank' className='btn btn-secondary'>Share</a>
+              <button id='new-quote' className='btn btn-success ms-3' onClick={handleRand}>Randomize</button>
+            </section>
+          </figure>
+        </div>
+    </main>
   )
 }
 
