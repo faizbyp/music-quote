@@ -21,7 +21,7 @@ function App() {
             <p id='author' className="text-body-secondary">{`— ${authorText}`}</p>
             <section id="buttons" className='text-end mb-2'>
               <a id='tweet-quote' href={`https://twitter.com/intent/tweet?text=${quoteText}%0A— ${authorText}%0Ahttps://music-quote.vercel.app/`} target='_blank' className='btn btn-secondary'>Share</a>
-              <button id='new-quote' className='btn btn-success ms-3' onClick={handleRand}>Randomize</button>
+              <button id='new-quote' className='btn btn-success ms-3' onClick={handleRand}>New Quote</button>
             </section>
           </figure>
         </div>
