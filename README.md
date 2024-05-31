@@ -4,6 +4,8 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a><a href="https://vitejs.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="36" height="36" alt="Vite" /></a><a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
 </p>
 
+https://music-quote.vercel.app/
+
 The project uses React JS as the frontend library and Bootstrap as the CSS framework. The data of the quotes was collected inside a JavaScript array of objects so then it could be randomized when the user clicked on the button. The useState hook was used to rerender the DOM based on the quote selected by the randomizer. Besides that, user can also share the quote on their X/Twitter account directly. The quote text was passed into the X/Twitter intent URL as a query so all they had to do was click the button, and post the tweet.
 
 ![Website Preview (shots.so)](https://github.com/faizbyp/music-quote/assets/65883882/424bb658-4316-4790-a933-4f4c125ac595)
@@ -34,8 +36,8 @@ The project uses React JS as the frontend library and Bootstrap as the CSS frame
 
 ## All Tests Passed
 
+Visit the [test deployment](https://mellifluous-frangollo-f9256a.netlify.app/)
+
 ![Screenshot of the tests](https://github.com/faizbyp/music-quote/assets/65883882/74740062-1a51-4298-ac3d-146a6da73ce1)
 
 ![All tests passed](https://github.com/faizbyp/music-quote/assets/65883882/e87efce8-8175-4261-8275-cceded935650)
-
-To see the repo with the CDN test script, visit the [test branch](https://github.com/faizbyp/music-quote/tree/test)
