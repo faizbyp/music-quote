@@ -35,3 +35,7 @@ The project uses React JS as the frontend library and Bootstrap as the CSS frame
 ## All Tests Passed
 
 ![Screenshot of the tests](https://github.com/faizbyp/music-quote/assets/65883882/74740062-1a51-4298-ac3d-146a6da73ce1)
+
+![All tests passed](https://github.com/faizbyp/music-quote/assets/65883882/e87efce8-8175-4261-8275-cceded935650)
+
+To see the repo with the CDN test script, visit the [test branch](https://github.com/faizbyp/music-quote/tree/test)
