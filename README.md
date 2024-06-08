@@ -12,6 +12,7 @@ The project uses React JS as the frontend library and Bootstrap as the CSS frame
 
 ## Development Logs
 
+- June 8, 2024: Color changed on quote randomize
 - May 28, 2024: Project launched
 
 ## User Stories
