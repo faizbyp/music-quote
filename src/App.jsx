@@ -3,19 +3,26 @@ import { quotes } from "./quotes";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
+  const colors = ["success", "primary", "warning"];
   const rand = Math.floor(Math.random() * quotes.length);
   const [quoteText, setQuoteText] = useState(quotes[rand].quote);
   const [authorText, setAuthorText] = useState(quotes[rand].author);
+  const [colorIndex, setColorIndex] = useState(0);
+  const [color, setColor] = useState(colors[0]);
 
   const handleRand = () => {
     const rand = Math.floor(Math.random() * quotes.length);
+    const nextIndex = (colorIndex + 1) % colors.length;
+
     setQuoteText(quotes[rand].quote);
     setAuthorText(quotes[rand].author);
+    setColorIndex(nextIndex);
+    setColor(colors[nextIndex]);
   };
 
   return (
     <>
-      <main className="container-fluid bg-success position-relative" style={{ height: "100svh" }}>
+      <main className={`container-fluid bg-${color} position-relative`} style={{ height: "100svh" }}>
         <small className="position-absolute top-0 end-0 px-4 py-3 text-white-50">Music Quote</small>
         <div className="row h-100 justify-content-center align-items-center">
           <figure
@@ -33,7 +40,7 @@ function App() {
               >
                 Share
               </a>
-              <button id="new-quote" className="btn btn-success ms-3" onClick={handleRand}>
+              <button id="new-quote" className={`btn btn-${color} ms-3`} onClick={handleRand}>
                 New Quote
               </button>
             </section>
