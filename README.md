@@ -10,6 +10,10 @@ The project uses React JS as the frontend library and Bootstrap as the CSS frame
 
 ![Website Preview (shots.so)](https://github.com/faizbyp/music-quote/assets/65883882/424bb658-4316-4790-a933-4f4c125ac595)
 
+## Development Logs
+
+- May 28, 2024: Project launched
+
 ## User Stories
 
 1. I can see a wrapper element with a corresponding `id="quote-box"`.
